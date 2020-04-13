@@ -1,0 +1,5 @@
+dir - List directories in the file 
+cd "file name" - change directry to a particular file 
+cd.. - go back to previous directory
+cls - clear screen
+mkdir folder - make new directory 
