@@ -1,0 +1,33 @@
+Scope:
+  follows LEGB rule 
+  1)Local
+  2)Enclosing Function Locals
+  3)Global 
+  4)Built-in
+  
+  Example:
+    #Local
+    >>>lambda x: x**2
+    
+    #Enclosing Function Locals
+    >>>name = 'This is a global name'
+    
+        def greet():
+          name = "Sagar"
+          
+          def hello():
+            print("hello"+name)
+          
+          hello()
+       
+       greet()
+       print(name)
+    
+    
+    #Global 
+      defined outside the function
+      
+    #Built-in 
+      Pre defined function which should not be redefined
+      eg: len
+    
