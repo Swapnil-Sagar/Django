@@ -44,4 +44,33 @@ Scope:
       
   myc.Circle(3)
   print(myc.area())
+  
+-----------------------------x----------------------x----------------------------
+Error handling 
+
+keywords:
+1. Try
+2. Except 
+3. Finally
+
+
+>>>try:
+        f = open('simple.txt','w')
+        f.write("test write sample")
+   expect IOError:                                     #or you can write justexpect:
+        print("Error: Could not find file")
+   finally:
+        print("This always print")
+   else:
+        print("Success")
+        f.close()
+        
+        
+------------------------------------x-----------------------x-----------------------------
+        REGULAR EXPRESSIONS
+        
+        Regular Expressions allow us to search for patterns in Python strings.
+        
+      
+
     
