@@ -30,4 +30,18 @@ Scope:
     #Built-in 
       Pre defined function which should not be redefined
       eg: len
+      
+ -----------------------------------------x---------x---------------------------------   
+  #Methods are functions defined inside the class body
+  
+  class Circle():
+    pi=3.14
+    def __init__(self,radius=1):      #self parameter refer to itself which is common
+      self.radius = radius
+      
+    def area(self):
+      return self.radius*self.radius*Circle.pi
+      
+  myc.Circle(3)
+  print(myc.area())
     
