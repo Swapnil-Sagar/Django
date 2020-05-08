@@ -1,0 +1,73 @@
+A virtual environment allows you to have a virtual installation of Python and packages on your computer.
+
+Packages change and get updated often!
+There are changes that break backwards compatibility.
+So what do you do if you want to test out new features but not break your web app?
+
+You create a virtual environment that contains the newer version of the package.
+
+To use a virtual environment with conda we use these commands:
+conda create --name myEnv django
+
+You can then activate the environment:
+activate myEnv
+Now, anything installed with pip or conda when this environment is activated, will only be installed for this environment.
+
+You can then deactivate the environment 
+deactivate myEnv
+
+
+You can install Django with 
+conda install django
+Or for normal python distributions:
+pip install django
+
+
+When you install Django, it actually also installed a command line tool called:
+django-admin
+Let’s create our first project. Type:
+django-admin startproject first_project
+
+Some of the files that are create when your forst django project is created:
+
+1) __init__.py
+This is a blank Python script that due to its special name let’s Python know that this directory can be treated as a package
+
+
+2) settings.py
+This is where you will store all your project settings
+
+3) urls.py
+This is a Python script that will store all the URL patterns for your project. Basically the different pages of your web application.
+
+
+4) wsgi.py
+This is a Python script that acts as the Web Server Gateway Interface. It will later on help us deploy our web app to production
+
+5)manage.py
+This is a Python script that we will use a lot. It will be associates with many commands as we build our web app!
+
+
+Let’s use manage.py now:
+python manage.py runserver
+You will see a bunch of stuff but at the bottom you will see something like:
+Django version 1.10.5, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+
+
+Copy and paste that url into your browser
+http://127.0.0.1:8000/
+You should now see your very first web page being locally hosted on your computer.
+
+
+You should have also noticed a warning about migrations. 
+This has to do with databases and how to connect them to Django
+
+What is a Migration?
+
+A migration allows you to move databases from one design to another, this is also reversible.
+So you can “migrate” your database
+
+
+
+
